@@ -135,7 +135,7 @@ class WebCrawler:
         except Exception as e:
             logger.error(f"Erro ao inicializar o navegador: {str(e)}")
             raise
-    
+
     def _is_resource_url(self, url: str) -> bool:
         """
         Verifica se a URL é um recurso estático (imagem, CSS, JS, etc.) que não deve ser capturado.
@@ -146,7 +146,6 @@ class WebCrawler:
         Returns:
             True se for um recurso estático, False caso contrário
         """
-        # Lista de extensões de arquivos para ignorar
         static_extensions = [
             '.png', '.jpg', '.jpeg', '.gif', '.bmp', '.svg', '.ico', '.webp',
             '.css', '.js', '.json', '.xml', '.pdf', '.doc', '.docx', '.xls', '.xlsx',
@@ -154,7 +153,6 @@ class WebCrawler:
             '.woff', '.woff2', '.ttf', '.eot', '.otf'
         ]
         
-        # Verificar se a URL termina com alguma dessas extensões
         parsed_url = urlparse(url)
         path = parsed_url.path.lower()
         
@@ -162,7 +160,6 @@ class WebCrawler:
             if path.endswith(ext):
                 return True
         
-        # Verificar diretórios comuns de recursos estáticos
         static_dirs = [
             '/wp-content/uploads/', '/images/', '/img/', '/css/', '/js/',
             '/assets/', '/static/', '/media/', '/fonts/', '/downloads/'
@@ -192,7 +189,6 @@ class WebCrawler:
         Returns:
             Tupla com (largura, altura) em pixels
         """
-        # Obter altura total da página
         total_height = self.driver.execute_script("""
             return Math.max(
                 document.body.scrollHeight, 
@@ -203,7 +199,6 @@ class WebCrawler:
             );
         """)
         
-        # Obter largura total da página
         total_width = self.driver.execute_script("""
             return Math.max(
                 document.body.scrollWidth, 
@@ -224,12 +219,10 @@ class WebCrawler:
             True se encontrar elementos de mídia, False caso contrário
         """
         try:
-            # Verificar vídeos
             has_videos = self.driver.execute_script("""
                 return document.querySelectorAll('video, iframe[src*="youtube"], iframe[src*="vimeo"]').length > 0;
             """)
             
-            # Verificar GIFs animados
             has_gifs = self.driver.execute_script("""
                 var images = document.getElementsByTagName('img');
                 for (var i = 0; i < images.length; i++) {
@@ -240,7 +233,6 @@ class WebCrawler:
                 return false;
             """)
             
-            # Verificar outros elementos animados
             has_animations = self.driver.execute_script("""
                 var elements = document.querySelectorAll('[class*="animate"], [class*="slider"], [class*="carousel"], [class*="banner"]');
                 return elements.length > 0;
@@ -257,7 +249,6 @@ class WebCrawler:
         Aguarda até que a página esteja completamente carregada,
         com checagens adicionais para garantir que todos os recursos estão carregados.
         """
-        # Aguardar carregamento básico (readyState == "complete")
         try:
             WebDriverWait(self.driver, 60).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
@@ -265,21 +256,16 @@ class WebCrawler:
         except TimeoutException:
             logger.warning("Timeout aguardando document.readyState='complete'")
         
-        # Aguardar carregamento de imagens
         try:
             self.driver.execute_script("""
                 return new Promise((resolve) => {
                     var images = document.getElementsByTagName('img');
                     var loaded = 0;
                     var total = images.length;
-                    
-                    // Se não houver imagens, resolver imediatamente
                     if (total === 0) {
                         resolve(true);
                         return;
                     }
-                    
-                    // Função para verificar se uma imagem está carregada
                     function checkImage(img) {
                         if (img.complete) {
                             loaded++;
@@ -302,13 +288,9 @@ class WebCrawler:
                             });
                         }
                     }
-                    
-                    // Verificar cada imagem
                     for (var i = 0; i < images.length; i++) {
                         checkImage(images[i]);
                     }
-                    
-                    // Timeout para evitar travamento
                     setTimeout(function() {
                         resolve(true);
                     }, 30000);
@@ -317,10 +299,8 @@ class WebCrawler:
         except Exception as e:
             logger.warning(f"Erro ao aguardar carregamento de imagens: {str(e)}")
         
-        # Verificar elementos de carregamento comuns e aguardar sua remoção
         try:
             self.driver.execute_script("""
-                // Aguardar por qualquer animação de carregamento desaparecer
                 var checkLoading = function() {
                     var loaders = document.querySelectorAll(
                         '.loading, .loader, [class*="loading"], [class*="loader"], [class*="progress"], .spinner'
@@ -338,41 +318,32 @@ class WebCrawler:
                     return true;
                 };
                 
-                // Tentar por até 15 segundos
                 var startTime = new Date().getTime();
                 while(!checkLoading()) {
                     if(new Date().getTime() - startTime > 15000) {
-                        break;  // Timeout após 15 segundos
+                        break;
                     }
-                    // Pequena pausa
                     new Promise(r => setTimeout(r, 500));
                 }
             """)
         except Exception as e:
             logger.warning(f"Erro ao verificar elementos de carregamento: {str(e)}")
             
-        # Verificar se a rolagem da página está estável
         try:
-            # Aguardar até que a altura da página esteja estável
             previous_height = -1
             current_height = self.driver.execute_script("return document.body.scrollHeight")
-            
-            # Tentar por até 10s
             start_time = time.time()
             while previous_height != current_height and time.time() - start_time < 10:
                 previous_height = current_height
                 time.sleep(1)
                 current_height = self.driver.execute_script("return document.body.scrollHeight")
-                
             logger.debug(f"Altura da página estabilizada em {current_height}px")
         except Exception as e:
             logger.warning(f"Erro ao verificar estabilidade da altura da página: {str(e)}")
             
-        # Aguardar por requisições AJAX (verificando jQuery se disponível)
         try:
             self.driver.execute_script("""
                 return new Promise((resolve) => {
-                    // Verificar se jQuery está disponível
                     if (typeof jQuery !== 'undefined') {
                         function checkAjax() {
                             if (jQuery.active === 0) {
@@ -383,11 +354,8 @@ class WebCrawler:
                         }
                         checkAjax();
                     } else {
-                        // Se não há jQuery, resolver imediatamente
                         resolve(true);
                     }
-                    
-                    // Timeout para evitar travamento
                     setTimeout(function() {
                         resolve(true);
                     }, 10000);
@@ -397,9 +365,11 @@ class WebCrawler:
             logger.warning(f"Erro ao verificar requisições AJAX: {str(e)}")
     
     def _pause_videos_and_animations(self):
-        """Pausa vídeos e animações na página para melhorar a captura."""
+        """
+        Pausa vídeos e animações na página, além de ajustar elementos fixos/sticky
+        para posição absoluta, mantendo a localização original.
+        """
         try:
-            # Tenta pausar todos os vídeos e animações
             self.driver.execute_script("""
                 // Pausar vídeos
                 var videos = document.querySelectorAll('video');
@@ -410,14 +380,12 @@ class WebCrawler:
                     } catch(e) {}
                 }
                 
-                // Pausar vídeos em iframes (YouTube, Vimeo, etc)
+                // Pausar iframes de vídeo (YouTube, Vimeo, etc.)
                 var iframes = document.querySelectorAll('iframe[src*="youtube"], iframe[src*="vimeo"]');
                 for(var i = 0; i < iframes.length; i++) {
                     try {
                         var iframe = iframes[i];
                         var src = iframe.getAttribute('src');
-                        
-                        // Adicionar parâmetro para pausar vídeo no carregamento
                         if(src.indexOf('youtube') > -1) {
                             if(src.indexOf('?') > -1) {
                                 iframe.setAttribute('src', src + '&autoplay=0&controls=0');
@@ -434,20 +402,20 @@ class WebCrawler:
                     } catch(e) {}
                 }
                 
-                // Ocultar carrosséis e sliders que estão em movimento
+                // Pausar carrosséis e sliders
                 var carousels = document.querySelectorAll('.carousel, .slider, [class*="carousel"], [class*="slider"], [class*="banner"]');
                 for(var i = 0; i < carousels.length; i++) {
                     carousels[i].style.animationPlayState = 'paused';
                     carousels[i].style.webkitAnimationPlayState = 'paused';
                 }
                 
-                // Pausar todas as animações CSS
+                // Injetar estilo para pausar animações CSS
                 var styleSheet = document.createElement('style');
                 styleSheet.type = 'text/css';
                 styleSheet.innerText = '* { animation-play-state: paused !important; -webkit-animation-play-state: paused !important; transition: none !important; }';
                 document.head.appendChild(styleSheet);
                 
-                // Remover elementos que podem atrapalhar a captura
+                // Remover pop-ups, banners, etc.
                 var elementsToRemove = document.querySelectorAll(
                     '.cookie-banner, .popup, .modal, .notification-bar, .toast, .overlay, [class*="cookie"], [class*="popup"], [class*="modal"], [class*="notification"], [class*="overlay"], [class*="toast"]'
                 );
@@ -455,20 +423,52 @@ class WebCrawler:
                     elementsToRemove[i].style.display = 'none';
                 }
                 
-                // Fixar elementos que podem mudar durante a rolagem
+                // Ajustar elementos fixos/sticky para posição absoluta,
+                // mantendo a posição original na página
                 var fixedElements = document.querySelectorAll(
                     'header, footer, nav, .header, .footer, .nav, [class*="header"], [class*="footer"], [class*="navigation"], [class*="navbar"], [class*="nav-bar"], .fixed, .sticky'
                 );
+                
                 for(var i = 0; i < fixedElements.length; i++) {
                     var element = fixedElements[i];
                     var style = window.getComputedStyle(element);
                     if(style.position === 'fixed' || style.position === 'sticky') {
+                        var rect = element.getBoundingClientRect();
+                        var currentTop = rect.top + window.scrollY;
+                        var currentLeft = rect.left + window.scrollX;
+                        
                         element.style.position = 'absolute';
+                        element.style.top = currentTop + 'px';
+                        element.style.left = currentLeft + 'px';
+                        element.style.width = rect.width + 'px';
+                        // Ajustar z-index se necessário
+                        element.style.zIndex = '1';
                     }
                 }
             """)
         except JavascriptException as e:
-            logger.warning(f"Erro ao tentar pausar vídeos: {str(e)}")
+            logger.warning(f"Erro ao tentar pausar vídeos ou ajustar elementos fixos: {str(e)}")
+    
+    def _scroll_page_and_wait(self, wait_after_scroll=60):
+        """
+        Rola a página até o final e aguarda um período extra para garantir que todos
+        os elementos sejam carregados.
+        
+        Args:
+            wait_after_scroll: Tempo de espera em segundos após o scroll (padrão 60s)
+        """
+        try:
+            last_height = self.driver.execute_script("return document.body.scrollHeight")
+            while True:
+                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(2)
+                new_height = self.driver.execute_script("return document.body.scrollHeight")
+                if new_height == last_height:
+                    break
+                last_height = new_height
+            time.sleep(wait_after_scroll)
+        except Exception as e:
+            logger.warning(f"Erro ao realizar scroll e espera: {str(e)}")
     
     def capture_screenshot(self, url: str) -> Image.Image:
         """
@@ -481,41 +481,26 @@ class WebCrawler:
         Returns:
             Objeto PIL Image com o screenshot
         """
-        # Verificar se é uma URL de recurso que não deve ser capturada
         if self._is_resource_url(url):
             logger.info(f"Ignorando captura de recurso estático: {url}")
-            return Image.new('RGB', (1, 1), color='white')  # Imagem vazia
+            return Image.new('RGB', (1, 1), color='white')
             
         try:
             logger.info(f"Iniciando captura de screenshot de {url}")
-            
-            # Carregar a página
             self.driver.get(url)
             
-            # Aguardar carregamento básico
-            logger.info(f"Aguardando carregamento básico ({self.wait_time}s)")
+            # Aguarda carregamento inicial
             time.sleep(self.wait_time)
             
-            # Verificar se a página tem elementos de mídia
-            has_media = self._has_media_elements()
+            # Executa o scroll completo e aguarda 60 segundos após o scroll
+            self._scroll_page_and_wait(wait_after_scroll=60)
             
-            # Se tiver vídeos ou animações, aguardar mais tempo
-            if has_media:
-                logger.info(f"Página contém elementos de mídia. Aguardando tempo adicional: {self.extra_wait_for_media}s")
-                time.sleep(self.extra_wait_for_media)
-            
-            # Verificar carregamento adicional
-            logger.info("Verificando carregamento completo da página")
-            self._wait_for_page_load_completion()
-            
-            # Pausar vídeos e animações para captura mais consistente
-            logger.info("Pausando vídeos e animações")
+            # Pausa vídeos, animações e ajusta elementos fixos
+            logger.info("Pausando vídeos, animações e ajustando elementos fixos")
             self._pause_videos_and_animations()
             
-            # Aguardar novamente após pausar vídeos
             time.sleep(2)
             
-            # Método 1: Usar o método nativo de captura de página completa se disponível (Firefox)
             if self.browser_type.lower() == "firefox":
                 try:
                     logger.info("Usando captura nativa do Firefox para página completa")
@@ -525,89 +510,56 @@ class WebCrawler:
                     return image
                 except Exception as e:
                     logger.warning(f"Erro ao usar captura nativa do Firefox: {str(e)}")
-                    # Continuar com método alternativo
             
-            # Método 2: Para Chrome e outros, implementar captura de página completa manualmente
-            # Determinar as dimensões totais da página
             total_width, total_height = self._get_page_dimensions()
             logger.info(f"Dimensões da página: {total_width}x{total_height}px")
             
-            # Ajustar a visualização para a altura total
             view_height = min(total_height, 16000)
             self.driver.set_window_size(total_width, view_height)
             
-            # Aguardar um pouco para que o redimensionamento seja aplicado
             time.sleep(2)
-            
-            # Rolar para o topo da página
             self.driver.execute_script("window.scrollTo(0, 0);")
             time.sleep(1)
             
-            # Para páginas muito longas, usar o método de costura
             if total_height > 15000 or (total_width > 1920 and total_height > 10000):
                 logger.info("Página muito longa, usando método de costura de screenshots")
                 return self._capture_full_screenshot_with_stitching(total_width, total_height)
             
-            # Capturar o screenshot completo
             logger.info("Capturando screenshot completo")
             screenshot_bytes = self.driver.get_screenshot_as_png()
             image = Image.open(BytesIO(screenshot_bytes))
             
-            # Verificar se as dimensões correspondem ao tamanho total da página
             img_width, img_height = image.size
             logger.info(f"Dimensões do screenshot: {img_width}x{img_height}px")
             
-            # Se capturou menos de 90% da altura esperada, tentar método de costura
             if img_height < total_height * 0.9:
-                logger.info(f"Captura simples insuficiente. Tentando método de costura.")
+                logger.info("Captura simples insuficiente. Tentando método de costura.")
                 return self._capture_full_screenshot_with_stitching(total_width, total_height)
             
             return image
                 
         except TimeoutException:
             logger.warning(f"Timeout ao carregar {url}, tentando novamente com tempo maior")
-            
-            # Tentar novamente com timeout maior
-            self.driver.set_page_load_timeout(240)  # 4 minutos
+            self.driver.set_page_load_timeout(240)
             self.driver.get(url)
-            
-            # Aguardar mais tempo para carregamento
             time.sleep(self.wait_time * 2)
-            
-            # Pausar vídeos
             self._pause_videos_and_animations()
-            
-            # Capturar screenshot
             total_width, total_height = self._get_page_dimensions()
             self.driver.set_window_size(total_width, min(total_height, 15000))
             time.sleep(2)
             screenshot_bytes = self.driver.get_screenshot_as_png()
-            
-            # Restaurar timeout original
             self.driver.set_page_load_timeout(self.page_load_timeout)
-            
-            # Converter para objeto PIL Image
             image = Image.open(BytesIO(screenshot_bytes))
             return image
             
         except WebDriverException as e:
             logger.error(f"Erro do WebDriver ao capturar screenshot de {url}: {str(e)}")
-            
-            # Tentar reiniciar o driver
             logger.info("Reiniciando o WebDriver devido a erro")
             self.close()
             self.driver = self._init_browser()
-            
-            # Tentar novamente
             self.driver.get(url)
-            
-            # Esperar mais tempo para garantir carregamento
             time.sleep(self.wait_time * 2)
-            
-            # Pausar vídeos
             self._pause_videos_and_animations()
-            
-            # Capturar screenshot
             total_width, total_height = self._get_page_dimensions()
             self.driver.set_window_size(total_width, min(total_height, 15000))
             time.sleep(2)
@@ -617,7 +569,6 @@ class WebCrawler:
             
         except Exception as e:
             logger.error(f"Erro ao capturar screenshot de {url}: {str(e)}")
-            # Retornar uma imagem em branco como fallback
             return Image.new('RGB', (1920, 1080), color='white')
     
     def _capture_full_screenshot_with_stitching(self, total_width: int, total_height: int) -> Image.Image:
@@ -633,48 +584,38 @@ class WebCrawler:
         """
         logger.info(f"Iniciando captura com costura para página de dimensões {total_width}x{total_height}px")
         
-        # Configurar tamanho da janela de visualização
         viewport_width = min(1920, total_width)
-        viewport_height = 1080  # Altura padrão da janela
+        viewport_height = 1080
         
         self.driver.set_window_size(viewport_width, viewport_height)
-        time.sleep(2)  # Esperar o redimensionamento
+        time.sleep(2)
         
-        # Criar uma imagem completa para colar os pedaços
         full_screenshot = Image.new('RGB', (total_width, total_height))
         
-        # Capturar screenshots em partes com maior sobreposição
         offset = 0
         last_scrolled_pos = -1
-        overlap = 300  # Aumentar a sobreposição para evitar perder conteúdo
+        overlap = 300
         
         while offset < total_height:
-            # Rolar para a posição atual
             self.driver.execute_script(f"window.scrollTo(0, {offset});")
-            time.sleep(1)  # Dar tempo para a página rolar e renderizar
+            time.sleep(1)
             
-            # Obter a posição atual de scroll (pode ser diferente do solicitado)
             current_scroll_position = self.driver.execute_script("return window.pageYOffset;")
             
-            # Se a posição não mudou, podemos ter chegado ao final da página
             if current_scroll_position == last_scrolled_pos:
                 logger.info(f"Fim da página detectado em {current_scroll_position}px")
                 break
                 
             last_scrolled_pos = current_scroll_position
             
-            # Capturar screenshot parcial
             screenshot_bytes = self.driver.get_screenshot_as_png()
             screenshot = Image.open(BytesIO(screenshot_bytes))
             
-            # Colar na posição apropriada na imagem final
             full_screenshot.paste(screenshot, (0, current_scroll_position))
             logger.debug(f"Screenshot parcial colado em y={current_scroll_position}px")
             
-            # Avançar para a próxima seção, com sobreposição para garantir que não perdemos conteúdo
             offset += viewport_height - overlap
             
-            # Se chegamos ao final da página, podemos parar
             if offset >= total_height:
                 break
         

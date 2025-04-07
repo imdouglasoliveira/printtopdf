@@ -1,0 +1,57 @@
+2025-04-07 00:35:06,116 - __main__ - INFO - Iniciando PrintToPDF para Sitemaps XML com configurações de alta qualidade
+2025-04-07 00:35:06,116 - __main__ - INFO - Configurações: browser=firefox, wait_time=45s, extra_wait_for_media=20s
+2025-04-07 00:35:06,117 - sitemap_parser - INFO - Processando sitemap: https://anbap.org/wp-sitemap-posts-page-1.xml
+2025-04-07 00:35:07,139 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap
+2025-04-07 00:35:07,139 - sitemap_parser - INFO - Processando sitemap: https://nbsocial.org/wp-sitemap-posts-page-1.xml
+2025-04-07 00:35:07,386 - sitemap_parser - INFO - Extraídas 13 URLs do sitemap
+2025-04-07 00:35:07,395 - sitemap_parser - INFO - Processando sitemap: https://regimesocial.org/wp-sitemap-posts-page-1.xml
+2025-04-07 00:35:07,672 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap
+2025-04-07 00:35:12,296 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/politica-de-privacidade/
+2025-04-07 00:37:00,221 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:37:02,235 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:37:02,383 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2811)
+2025-04-07 00:37:03,020 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\politica_de_privacidade.pdf
+2025-04-07 00:37:03,021 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\politica_de_privacidade.pdf
+2025-04-07 00:37:03,021 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/termos-e-condicoes/
+2025-04-07 00:38:50,638 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:38:52,653 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:38:52,825 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3219)
+2025-04-07 00:38:53,674 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\termos_e_condicoes.pdf
+2025-04-07 00:38:53,674 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\termos_e_condicoes.pdf
+2025-04-07 00:38:53,675 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/contato/
+2025-04-07 00:40:42,595 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:40:44,612 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:40:44,906 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2384)
+2025-04-07 00:40:45,644 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\contato.pdf
+2025-04-07 00:40:45,644 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\contato.pdf
+2025-04-07 00:40:45,645 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/noticias/
+2025-04-07 00:42:34,494 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:42:36,510 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:42:37,312 - crawler - INFO - Screenshot capturado com dimensões: (1920, 13745)
+2025-04-07 00:42:40,896 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\noticias.pdf
+2025-04-07 00:42:40,897 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\noticias.pdf
+2025-04-07 00:42:40,897 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/obrigado-pelo-contato/
+2025-04-07 00:44:29,751 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:44:31,763 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:44:31,852 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2007)
+2025-04-07 00:44:32,309 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\obrigado_pelo_contato.pdf
+2025-04-07 00:44:32,309 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\obrigado_pelo_contato.pdf
+2025-04-07 00:44:32,310 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/faq/
+2025-04-07 00:46:26,819 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:46:28,830 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:46:28,935 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2628)
+2025-04-07 00:46:29,512 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\faq.pdf
+2025-04-07 00:46:29,513 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\faq.pdf
+2025-04-07 00:46:29,513 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/revisao-da-vida-toda/
+2025-04-07 00:48:17,273 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:48:19,286 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:48:19,426 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3097)
+2025-04-07 00:48:20,097 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\revisao_da_vida_toda.pdf
+2025-04-07 00:48:20,097 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\revisao_da_vida_toda.pdf
+2025-04-07 00:48:20,098 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/
+2025-04-07 00:50:09,085 - crawler - INFO - Pausando vídeos, animações e ajustando elementos fixos
+2025-04-07 00:50:11,114 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-07 00:50:11,738 - crawler - INFO - Screenshot capturado com dimensões: (1920, 9641)
+2025-04-07 00:50:14,179 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\page_8.pdf
+2025-04-07 00:50:14,180 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\page_8.pdf
+2025-04-07 00:50:14,180 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/telemedicina/
