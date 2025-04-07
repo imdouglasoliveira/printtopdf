@@ -1,0 +1,175 @@
+2025-04-05 16:59:14,168 - __main__ - INFO - Iniciando PrintToPDF com configurações de alta qualidade
+2025-04-05 16:59:14,169 - __main__ - INFO - Configurações: browser=firefox, max_depth=3, wait_time=30s, extra_wait_for_media=15s
+2025-04-05 16:59:45,225 - crawler - WARNING - Erro ao acessar https://nbsocial.org/nbsocial.org: 404 Client Error: Not Found for url: https://nbsocial.org/nbsocial.org
+2025-04-05 16:59:45,970 - crawler - WARNING - Erro ao acessar https://nbsocial.org/cdn-cgi/l/email-protection: 404 Client Error: Not Found for url: https://nbsocial.org/cdn-cgi/l/email-protection
+2025-04-05 16:59:47,472 - crawler - WARNING - Erro ao acessar https://nbsocial.org/sobre-nos: 404 Client Error: Not Found for url: https://nbsocial.org/sobre-nos
+2025-04-05 17:00:40,436 - crawler - INFO - Carregando página: https://nbsocial.org/
+2025-04-05 17:01:13,987 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 15s
+2025-04-05 17:01:31,017 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:01:34,026 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_1.pdf
+2025-04-05 17:01:34,026 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_1.pdf
+2025-04-05 17:01:34,027 - crawler - INFO - Carregando página: https://nbsocial.org/10-padroes-de-trico-faceis-para-iniciantes
+2025-04-05 17:02:09,187 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:02:11,170 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\10_padroes_de_trico_faceis_para_iniciantes.pdf
+2025-04-05 17:02:11,171 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\10_padroes_de_trico_faceis_para_iniciantes.pdf
+2025-04-05 17:02:11,171 - crawler - INFO - Carregando página: https://nbsocial.org/2024/02/22
+2025-04-05 17:02:44,826 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:02:47,152 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\22.pdf
+2025-04-05 17:02:47,153 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\22.pdf
+2025-04-05 17:02:47,153 - crawler - INFO - Carregando página: https://nbsocial.org/2024/02/22/page/2
+2025-04-05 17:03:20,907 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:03:23,193 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\2.pdf
+2025-04-05 17:03:23,193 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\2.pdf
+2025-04-05 17:03:23,193 - crawler - INFO - Carregando página: https://nbsocial.org/2024/03/12
+2025-04-05 17:03:56,335 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:03:56,949 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\12.pdf
+2025-04-05 17:03:56,949 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\12.pdf
+2025-04-05 17:03:56,950 - crawler - INFO - Carregando página: https://nbsocial.org/2024/07/27
+2025-04-05 17:04:30,093 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:04:31,519 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\27.pdf
+2025-04-05 17:04:31,520 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\27.pdf
+2025-04-05 17:04:31,520 - crawler - INFO - Carregando página: https://nbsocial.org/2024/08/12
+2025-04-05 17:05:04,541 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:05:05,144 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\12_1.pdf
+2025-04-05 17:05:05,144 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\12_1.pdf
+2025-04-05 17:05:05,145 - crawler - INFO - Carregando página: https://nbsocial.org/2025/03/21
+2025-04-05 17:05:38,074 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:05:38,685 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\21.pdf
+2025-04-05 17:05:38,685 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\21.pdf
+2025-04-05 17:05:38,685 - crawler - INFO - Carregando página: https://nbsocial.org/5-destinos-incriveis-para-aposentados-aventureiros
+2025-04-05 17:06:11,629 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:06:13,559 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\5_destinos_incriveis_para_aposentados_aventureiros.pdf
+2025-04-05 17:06:13,559 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\5_destinos_incriveis_para_aposentados_aventureiros.pdf
+2025-04-05 17:06:13,559 - crawler - INFO - Carregando página: https://nbsocial.org/alerta-aos-idosos-advogado-suspeito-de-enganar-clientes-no-tribunal
+2025-04-05 17:06:56,619 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:06:57,552 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\alerta_aos_idosos_advogado_suspeito_de_enganar_clientes_no_tribunal.pdf
+2025-04-05 17:06:57,552 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\alerta_aos_idosos_advogado_suspeito_de_enganar_clientes_no_tribunal.pdf
+2025-04-05 17:06:57,553 - crawler - INFO - Carregando página: https://nbsocial.org/antecipacao-do-13o-salario-do-inss-em-2024-uma-boa-noticia-para-aposentados-e-pensionistas
+2025-04-05 17:07:40,678 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:07:41,543 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\antecipacao_do_13o_salario_do_inss_em_2024_uma_boa_noticia_para_aposentados_e_pensionistas.pdf
+2025-04-05 17:07:41,544 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\antecipacao_do_13o_salario_do_inss_em_2024_uma_boa_noticia_para_aposentados_e_pensionistas.pdf
+2025-04-05 17:07:41,544 - crawler - INFO - Carregando página: https://nbsocial.org/arraial-social
+2025-04-05 17:08:24,692 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:08:25,834 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\arraial_social.pdf
+2025-04-05 17:08:25,834 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\arraial_social.pdf
+2025-04-05 17:08:25,835 - crawler - INFO - Carregando página: https://nbsocial.org/beneficio-de-prestacao-continuada-bpc-aumenta-significativamente-para-idosos
+2025-04-05 17:09:08,653 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:09:09,600 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\beneficio_de_prestacao_continuada_bpc_aumenta_significativamente_para_idosos.pdf
+2025-04-05 17:09:09,600 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\beneficio_de_prestacao_continuada_bpc_aumenta_significativamente_para_idosos.pdf
+2025-04-05 17:09:09,601 - crawler - INFO - Carregando página: https://nbsocial.org/cdn-cgi/l/email-protection
+2025-04-05 17:09:42,139 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:09:42,377 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\email_protection.pdf
+2025-04-05 17:09:42,377 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\email_protection.pdf
+2025-04-05 17:09:42,378 - crawler - INFO - Carregando página: https://nbsocial.org/como-criar-um-jardim-de-baixa-manutencao-em-casa
+2025-04-05 17:10:15,517 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:10:17,618 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\como_criar_um_jardim_de_baixa_manutencao_em_casa.pdf
+2025-04-05 17:10:17,618 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\como_criar_um_jardim_de_baixa_manutencao_em_casa.pdf
+2025-04-05 17:10:17,618 - crawler - INFO - Carregando página: https://nbsocial.org/como-transformar-artesanato-em-negocio-lucrativo
+2025-04-05 17:10:50,747 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:10:52,838 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\como_transformar_artesanato_em_negocio_lucrativo.pdf
+2025-04-05 17:10:52,838 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\como_transformar_artesanato_em_negocio_lucrativo.pdf
+2025-04-05 17:10:52,839 - crawler - INFO - Carregando página: https://nbsocial.org/consultas-exames
+2025-04-05 17:11:27,457 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 15s
+2025-04-05 17:11:44,474 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:11:45,729 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\consultas_exames.pdf
+2025-04-05 17:11:45,729 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\consultas_exames.pdf
+2025-04-05 17:11:45,730 - crawler - INFO - Carregando página: https://nbsocial.org/contato
+2025-04-05 17:12:29,395 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:12:30,155 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\contato.pdf
+2025-04-05 17:12:30,156 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\contato.pdf
+2025-04-05 17:12:30,156 - crawler - INFO - Carregando página: https://nbsocial.org/croche-para-iniciantes-passo-a-passo-para-comecar
+2025-04-05 17:13:03,293 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:13:05,263 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\croche_para_iniciantes_passo_a_passo_para_comecar.pdf
+2025-04-05 17:13:05,263 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\croche_para_iniciantes_passo_a_passo_para_comecar.pdf
+2025-04-05 17:13:05,264 - crawler - INFO - Carregando página: https://nbsocial.org/descontos-em-medicamentos
+2025-04-05 17:13:36,821 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 15s
+2025-04-05 17:13:53,835 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:13:54,889 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 17:13:54,889 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 17:13:54,889 - crawler - INFO - Carregando página: https://nbsocial.org/dicas-de-viagem-economica-para-aposentados-como-explorar-gastando-menos
+2025-04-05 17:14:28,070 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:14:30,164 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\dicas_de_viagem_economica_para_aposentados_como_explorar_gastando_menos.pdf
+2025-04-05 17:14:30,164 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\dicas_de_viagem_economica_para_aposentados_como_explorar_gastando_menos.pdf
+2025-04-05 17:14:30,164 - crawler - INFO - Carregando página: https://nbsocial.org/faq
+2025-04-05 17:15:13,827 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:15:14,408 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\faq.pdf
+2025-04-05 17:15:14,408 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\faq.pdf
+2025-04-05 17:15:14,409 - crawler - INFO - Carregando página: https://nbsocial.org/guia-pratico-para-montar-sua-horta-em-casa
+2025-04-05 17:15:47,602 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:15:49,645 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\guia_pratico_para_montar_sua_horta_em_casa.pdf
+2025-04-05 17:15:49,646 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\guia_pratico_para_montar_sua_horta_em_casa.pdf
+2025-04-05 17:15:49,646 - crawler - INFO - Carregando página: https://nbsocial.org/horta-vertical-solucoes-criativas-para-espacos-pequenos
+2025-04-05 17:16:22,843 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:16:24,876 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\horta_vertical_solucoes_criativas_para_espacos_pequenos.pdf
+2025-04-05 17:16:24,877 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\horta_vertical_solucoes_criativas_para_espacos_pequenos.pdf
+2025-04-05 17:16:24,877 - crawler - INFO - Carregando página: https://nbsocial.org/iniciando-no-artesanato-5-projetos-para-principiantes
+2025-04-05 17:16:58,290 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:17:00,190 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\iniciando_no_artesanato_5_projetos_para_principiantes.pdf
+2025-04-05 17:17:00,190 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\iniciando_no_artesanato_5_projetos_para_principiantes.pdf
+2025-04-05 17:17:00,190 - crawler - INFO - Carregando página: https://nbsocial.org/jardinagem-em-familia-como-envolver-as-criancas
+2025-04-05 17:17:33,387 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:17:35,326 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\jardinagem_em_familia_como_envolver_as_criancas.pdf
+2025-04-05 17:17:35,326 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\jardinagem_em_familia_como_envolver_as_criancas.pdf
+2025-04-05 17:17:35,327 - crawler - INFO - Carregando página: https://nbsocial.org/jardins-terapeuticos-beneficios-da-jardinagem-para-a-saude-mental
+2025-04-05 17:18:08,518 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:18:10,395 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\jardins_terapeuticos_beneficios_da_jardinagem_para_a_saude_mental.pdf
+2025-04-05 17:18:10,395 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\jardins_terapeuticos_beneficios_da_jardinagem_para_a_saude_mental.pdf
+2025-04-05 17:18:10,396 - crawler - INFO - Carregando página: https://nbsocial.org/nb-social-inaugura-novos-escritorios-em-varzea-grande-e-criciuma-mais-perto-de-quem-precisa
+2025-04-05 17:18:44,919 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:18:46,750 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\nb_social_inaugura_novos_escritorios_em_varzea_grande_e_criciuma_mais_perto_de_quem_precisa.pdf
+2025-04-05 17:18:46,751 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\nb_social_inaugura_novos_escritorios_em_varzea_grande_e_criciuma_mais_perto_de_quem_precisa.pdf
+2025-04-05 17:18:46,751 - crawler - INFO - Carregando página: https://nbsocial.org/nbsocial.org
+2025-04-05 17:19:31,016 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:19:31,519 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_29.pdf
+2025-04-05 17:19:31,519 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_29.pdf
+2025-04-05 17:19:31,520 - crawler - INFO - Carregando página: https://nbsocial.org/plano-odontologico
+2025-04-05 17:20:03,311 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 15s
+2025-04-05 17:20:20,325 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:20:21,375 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\plano_odontologico.pdf
+2025-04-05 17:20:21,375 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\plano_odontologico.pdf
+2025-04-05 17:20:21,376 - crawler - INFO - Carregando página: https://nbsocial.org/politica-de-privacidade
+2025-04-05 17:21:04,824 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:21:05,472 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 17:21:05,473 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 17:21:05,473 - crawler - INFO - Carregando página: https://nbsocial.org/programa-sss
+2025-04-05 17:21:49,625 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:21:50,658 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\programa_sss.pdf
+2025-04-05 17:21:50,658 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\programa_sss.pdf
+2025-04-05 17:21:50,658 - crawler - INFO - Carregando página: https://nbsocial.org/proteja-se-de-golpes-saiba-como-identificar-e-evitar-fraudes-do-inss
+2025-04-05 17:22:23,619 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:22:24,636 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\proteja_se_de_golpes_saiba_como_identificar_e_evitar_fraudes_do_inss.pdf
+2025-04-05 17:22:24,637 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\proteja_se_de_golpes_saiba_como_identificar_e_evitar_fraudes_do_inss.pdf
+2025-04-05 17:22:24,637 - crawler - INFO - Carregando página: https://nbsocial.org/sobre-nos
+2025-04-05 17:23:08,473 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:23:08,980 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\sobre_nos.pdf
+2025-04-05 17:23:08,980 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\sobre_nos.pdf
+2025-04-05 17:23:08,981 - crawler - INFO - Carregando página: https://nbsocial.org/telemedicina
+2025-04-05 17:23:43,625 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 15s
+2025-04-05 17:24:00,641 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:24:02,236 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\telemedicina.pdf
+2025-04-05 17:24:02,236 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\telemedicina.pdf
+2025-04-05 17:24:02,237 - crawler - INFO - Carregando página: https://nbsocial.org/tendencias-de-artesanato-para-2024-o-que-esta-em-alta
+2025-04-05 17:24:35,381 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:24:37,289 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\tendencias_de_artesanato_para_2024_o_que_esta_em_alta.pdf
+2025-04-05 17:24:37,289 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\tendencias_de_artesanato_para_2024_o_que_esta_em_alta.pdf
+2025-04-05 17:24:37,290 - crawler - INFO - Carregando página: https://nbsocial.org/termos-e-condicoes
+2025-04-05 17:25:11,360 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:25:12,032 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 17:25:12,032 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 17:25:12,033 - crawler - INFO - Carregando página: https://nbsocial.org/transforme-seu-quintal-dicas-de-paisagismo-para-iniciantes
+2025-04-05 17:25:44,998 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:25:46,804 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\transforme_seu_quintal_dicas_de_paisagismo_para_iniciantes.pdf
+2025-04-05 17:25:46,804 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\transforme_seu_quintal_dicas_de_paisagismo_para_iniciantes.pdf
+2025-04-05 17:25:46,805 - crawler - INFO - Carregando página: https://nbsocial.org/viajando-com-seguranca-guia-para-aposentados
+2025-04-05 17:26:20,202 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:26:22,378 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\viajando_com_seguranca_guia_para_aposentados.pdf
+2025-04-05 17:26:22,378 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\viajando_com_seguranca_guia_para_aposentados.pdf
+2025-04-05 17:26:22,379 - crawler - INFO - Carregando página: https://nbsocial.org/wp-content/uploads/2024/02/LogoCP-advogados.png
+2025-04-05 17:26:54,653 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:26:54,944 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\LogoCP_advogados_png.pdf
+2025-04-05 17:26:54,944 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\LogoCP_advogados_png.pdf
+2025-04-05 17:26:54,945 - crawler - INFO - Carregando página: https://nbsocial.org/wp-content/uploads/2024/02/clinimed.png
+2025-04-05 17:27:27,207 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 17:27:27,475 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\clinimed_png.pdf
+2025-04-05 17:27:27,476 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\clinimed_png.pdf
+2025-04-05 17:27:27,476 - crawler - INFO - Carregando página: https://nbsocial.org/wp-content/uploads/2024/02/lifeplan.png

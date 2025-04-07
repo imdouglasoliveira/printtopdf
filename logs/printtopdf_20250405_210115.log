@@ -1,0 +1,408 @@
+2025-04-05 21:01:15,533 - __main__ - INFO - Iniciando PrintToPDF para Sitemaps XML com configurações de alta qualidade
+2025-04-05 21:01:15,533 - __main__ - INFO - Configurações: browser=firefox, wait_time=45s, extra_wait_for_media=20s
+2025-04-05 21:01:15,533 - sitemap_parser - INFO - Processando sitemap: https://anbap.org/wp-sitemap-posts-page-1.xml
+2025-04-05 21:01:17,880 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap
+2025-04-05 21:01:17,880 - sitemap_parser - INFO - Processando sitemap: https://nbsocial.org/wp-sitemap-posts-page-1.xml
+2025-04-05 21:01:19,106 - sitemap_parser - INFO - Extraídas 13 URLs do sitemap
+2025-04-05 21:01:19,107 - sitemap_parser - INFO - Processando sitemap: https://regimesocial.org/wp-sitemap-posts-page-1.xml
+2025-04-05 21:01:20,473 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap
+2025-04-05 21:01:26,873 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/politica-de-privacidade/
+2025-04-05 21:01:30,084 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:02:15,096 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:02:16,111 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:02:18,122 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:02:18,219 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2811)
+2025-04-05 21:02:18,748 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:02:18,749 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:02:18,749 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/termos-e-condicoes/
+2025-04-05 21:02:20,507 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:03:05,518 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:03:06,534 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:03:08,543 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:03:08,638 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3219)
+2025-04-05 21:03:09,270 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:03:09,270 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:03:09,271 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/contato/
+2025-04-05 21:03:13,096 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:03:58,104 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:03:59,117 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:04:01,128 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:04:01,294 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2384)
+2025-04-05 21:04:01,878 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\contato.pdf
+2025-04-05 21:04:01,878 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\contato.pdf
+2025-04-05 21:04:01,879 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/noticias/
+2025-04-05 21:04:05,787 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:04:50,795 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:05:20,808 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:05:21,818 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:05:23,834 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:05:24,318 - crawler - INFO - Screenshot capturado com dimensões: (1920, 13745)
+2025-04-05 21:05:27,266 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\noticias.pdf
+2025-04-05 21:05:27,267 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\noticias.pdf
+2025-04-05 21:05:27,268 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/obrigado-pelo-contato/
+2025-04-05 21:05:34,107 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:06:19,116 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:06:20,132 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:06:22,142 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:06:22,201 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2007)
+2025-04-05 21:06:22,568 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:06:22,568 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:06:22,568 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/faq/
+2025-04-05 21:06:24,071 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:07:09,079 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:07:10,093 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:07:12,103 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:07:12,177 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2628)
+2025-04-05 21:07:12,648 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\faq.pdf
+2025-04-05 21:07:12,648 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\faq.pdf
+2025-04-05 21:07:12,649 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/revisao-da-vida-toda/
+2025-04-05 21:07:15,775 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:08:00,783 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:08:20,783 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:08:21,802 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:08:23,815 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:08:23,918 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3097)
+2025-04-05 21:08:24,530 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:08:24,530 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:08:24,531 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/
+2025-04-05 21:08:31,031 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:09:16,040 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:09:36,041 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:10:06,072 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:10:07,084 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:10:09,106 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:10:09,538 - crawler - INFO - Screenshot capturado com dimensões: (1920, 9641)
+2025-04-05 21:10:11,504 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\page_8.pdf
+2025-04-05 21:10:11,505 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\page_8.pdf
+2025-04-05 21:10:11,505 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/telemedicina/
+2025-04-05 21:10:14,624 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:10:59,631 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:11:19,632 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:11:49,653 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:11:50,663 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:11:52,676 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:11:52,986 - crawler - INFO - Screenshot capturado com dimensões: (1920, 5991)
+2025-04-05 21:11:54,247 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\telemedicina.pdf
+2025-04-05 21:11:54,247 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\telemedicina.pdf
+2025-04-05 21:11:54,248 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/plano-odontologico/
+2025-04-05 21:11:56,874 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:12:41,881 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:13:01,882 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:13:02,896 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:13:04,907 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:13:05,137 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3391)
+2025-04-05 21:13:05,968 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\plano_odontologico.pdf
+2025-04-05 21:13:05,968 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\plano_odontologico.pdf
+2025-04-05 21:13:05,969 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/consultas-exames/
+2025-04-05 21:13:07,881 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:13:52,890 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:14:12,890 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:14:13,908 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:14:15,921 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:14:16,205 - crawler - INFO - Screenshot capturado com dimensões: (1920, 4506)
+2025-04-05 21:14:17,259 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\consultas_exames.pdf
+2025-04-05 21:14:17,259 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\consultas_exames.pdf
+2025-04-05 21:14:17,260 - crawler - INFO - Iniciando captura de screenshot de https://anbap.org/descontos-em-medicamentos/
+2025-04-05 21:14:19,189 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:15:04,197 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:15:24,198 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:15:25,211 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:15:27,222 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:15:27,448 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3486)
+2025-04-05 21:15:28,292 - pdf_generator - INFO - PDF criado com sucesso: results\anbap.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:15:28,293 - __main__ - INFO - PDF criado com sucesso: results\anbap.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:15:28,367 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\anbap.org\anbap.org_completo.pdf
+2025-04-05 21:15:35,336 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/descontos-em-medicamentos/
+2025-04-05 21:16:09,907 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:16:54,920 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:16:55,932 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:16:57,938 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:16:58,351 - crawler - INFO - Screenshot capturado com dimensões: (1920, 18085)
+2025-04-05 21:17:01,575 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:17:01,576 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:17:01,576 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/consultas-exames/
+2025-04-05 21:17:04,367 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:17:49,375 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:18:09,375 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:18:10,389 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:18:12,400 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:18:12,632 - crawler - INFO - Screenshot capturado com dimensões: (1920, 4489)
+2025-04-05 21:18:13,666 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\consultas_exames.pdf
+2025-04-05 21:18:13,666 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\consultas_exames.pdf
+2025-04-05 21:18:13,667 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/plano-odontologico/
+2025-04-05 21:18:14,669 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:18:59,677 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:19:19,678 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:19:20,701 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:19:22,715 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:19:22,950 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3444)
+2025-04-05 21:19:23,881 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\plano_odontologico.pdf
+2025-04-05 21:19:23,881 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\plano_odontologico.pdf
+2025-04-05 21:19:23,882 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/telemedicina/
+2025-04-05 21:19:24,825 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:20:09,837 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:20:29,838 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:20:59,864 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:21:00,875 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:21:02,887 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:21:03,153 - crawler - INFO - Screenshot capturado com dimensões: (1920, 6038)
+2025-04-05 21:21:04,452 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\telemedicina.pdf
+2025-04-05 21:21:04,452 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\telemedicina.pdf
+2025-04-05 21:21:04,453 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/home/
+2025-04-05 21:21:07,900 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:21:52,915 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:22:12,916 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:22:42,936 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:22:43,949 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:22:45,972 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:22:46,502 - crawler - INFO - Screenshot capturado com dimensões: (1920, 11452)
+2025-04-05 21:22:49,072 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\home.pdf
+2025-04-05 21:22:49,072 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\home.pdf
+2025-04-05 21:22:49,073 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/revisao-da-vida-toda/
+2025-04-05 21:22:50,907 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:23:35,915 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:23:55,916 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:24:11,949 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:24:13,959 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:24:14,060 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3170)
+2025-04-05 21:24:14,639 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:24:14,640 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:24:14,640 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/faq/
+2025-04-05 21:24:15,840 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:25:00,848 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:25:16,882 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:25:18,892 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:25:18,960 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2708)
+2025-04-05 21:25:19,469 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\faq.pdf
+2025-04-05 21:25:19,469 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\faq.pdf
+2025-04-05 21:25:19,470 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/obrigado-pelo-contato/
+2025-04-05 21:25:21,294 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:26:06,302 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:26:07,312 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:26:09,321 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:26:09,374 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2060)
+2025-04-05 21:26:09,729 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:26:09,730 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:26:09,730 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/contato/
+2025-04-05 21:26:10,593 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:26:55,601 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:27:11,637 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:27:13,646 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:27:13,801 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2414)
+2025-04-05 21:27:14,413 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\contato.pdf
+2025-04-05 21:27:14,413 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\contato.pdf
+2025-04-05 21:27:14,414 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/termos-e-condicoes/
+2025-04-05 21:27:15,417 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:28:00,424 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:28:01,437 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:28:03,446 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:28:03,537 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3056)
+2025-04-05 21:28:04,145 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:28:04,146 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:28:04,146 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/politica-de-privacidade/
+2025-04-05 21:28:05,154 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:28:50,161 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:29:06,207 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:29:08,215 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:29:08,294 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2792)
+2025-04-05 21:29:08,866 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:29:08,867 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:29:08,867 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/
+2025-04-05 21:29:12,629 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:29:57,637 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:30:17,637 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:30:47,645 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:30:58,670 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:31:00,695 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:31:01,134 - crawler - INFO - Screenshot capturado com dimensões: (1920, 12645)
+2025-04-05 21:31:03,734 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_12.pdf
+2025-04-05 21:31:03,734 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\page_12.pdf
+2025-04-05 21:31:03,735 - crawler - INFO - Iniciando captura de screenshot de https://nbsocial.org/obrigado/
+2025-04-05 21:31:06,670 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:31:51,681 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:32:11,681 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:32:41,692 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:32:52,713 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:32:54,740 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:32:55,190 - crawler - INFO - Screenshot capturado com dimensões: (1920, 12645)
+2025-04-05 21:32:57,834 - pdf_generator - INFO - PDF criado com sucesso: results\nbsocial.org\pages\obrigado.pdf
+2025-04-05 21:32:57,834 - __main__ - INFO - PDF criado com sucesso: results\nbsocial.org\pages\obrigado.pdf
+2025-04-05 21:32:57,921 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\nbsocial.org\nbsocial.org_completo.pdf
+2025-04-05 21:33:05,011 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/descontos-em-medicamentos/
+2025-04-05 21:33:09,118 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:33:54,133 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:34:14,133 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:34:15,149 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:34:17,160 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:34:17,399 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3668)
+2025-04-05 21:34:18,324 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:34:18,324 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\descontos_em_medicamentos.pdf
+2025-04-05 21:34:18,324 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/consultas-exames/
+2025-04-05 21:34:19,307 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:35:04,317 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:35:24,318 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:35:25,335 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:35:27,347 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:35:27,602 - crawler - INFO - Screenshot capturado com dimensões: (1920, 4618)
+2025-04-05 21:35:28,754 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\consultas_exames.pdf
+2025-04-05 21:35:28,755 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\consultas_exames.pdf
+2025-04-05 21:35:28,755 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/plano-odontologico/
+2025-04-05 21:35:30,267 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:36:15,276 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:36:35,276 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:36:36,294 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:36:38,305 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:36:38,533 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3573)
+2025-04-05 21:36:39,406 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\plano_odontologico.pdf
+2025-04-05 21:36:39,407 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\plano_odontologico.pdf
+2025-04-05 21:36:39,407 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/telemedicina/
+2025-04-05 21:36:40,771 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:37:25,779 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:37:45,780 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:38:15,800 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:38:16,812 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:38:18,827 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:38:19,193 - crawler - INFO - Screenshot capturado com dimensões: (1920, 6173)
+2025-04-05 21:38:20,723 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\telemedicina.pdf
+2025-04-05 21:38:20,724 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\telemedicina.pdf
+2025-04-05 21:38:20,724 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/home/
+2025-04-05 21:38:24,524 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:39:09,534 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:39:29,534 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:39:59,550 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:40:15,588 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:40:17,620 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:40:18,239 - crawler - INFO - Screenshot capturado com dimensões: (1920, 9982)
+2025-04-05 21:40:20,754 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\home.pdf
+2025-04-05 21:40:20,754 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\home.pdf
+2025-04-05 21:40:20,755 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/revisao-da-vida-toda/
+2025-04-05 21:40:23,169 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:41:08,177 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:41:28,177 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:41:29,196 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:41:31,208 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:41:31,313 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3299)
+2025-04-05 21:41:31,957 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:41:31,957 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\revisao_da_vida_toda.pdf
+2025-04-05 21:41:31,958 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/faq/
+2025-04-05 21:41:33,278 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:42:18,286 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:42:34,325 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:42:36,334 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:42:36,410 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2724)
+2025-04-05 21:42:36,928 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\faq.pdf
+2025-04-05 21:42:36,928 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\faq.pdf
+2025-04-05 21:42:36,929 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/obrigado-pelo-contato/
+2025-04-05 21:42:38,064 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:43:23,072 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:43:24,084 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:43:26,095 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:43:26,150 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2076)
+2025-04-05 21:43:26,562 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:43:26,563 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\obrigado_pelo_contato.pdf
+2025-04-05 21:43:26,563 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/contato/
+2025-04-05 21:43:27,878 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:44:12,885 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:44:28,934 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:44:30,951 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:44:31,190 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2401)
+2025-04-05 21:44:31,983 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\contato.pdf
+2025-04-05 21:44:31,984 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\contato.pdf
+2025-04-05 21:44:31,984 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/termos-e-condicoes/
+2025-04-05 21:44:33,329 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:45:18,340 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:45:19,358 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:45:21,368 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:45:21,471 - crawler - INFO - Screenshot capturado com dimensões: (1920, 3209)
+2025-04-05 21:45:22,102 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:45:22,102 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\termos_e_condicoes.pdf
+2025-04-05 21:45:22,103 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/politica-de-privacidade/
+2025-04-05 21:45:23,293 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:46:08,305 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:46:09,327 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:46:11,340 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:46:11,431 - crawler - INFO - Screenshot capturado com dimensões: (1920, 2945)
+2025-04-05 21:46:12,059 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:46:12,059 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\politica_de_privacidade.pdf
+2025-04-05 21:46:12,060 - crawler - INFO - Iniciando captura de screenshot de https://regimesocial.org/
+2025-04-05 21:46:16,148 - crawler - INFO - Aguardando carregamento básico (45s)
+2025-04-05 21:47:01,167 - crawler - INFO - Página contém elementos de mídia. Aguardando tempo adicional: 20s
+2025-04-05 21:47:21,168 - crawler - INFO - Verificando carregamento completo da página
+2025-04-05 21:47:51,183 - crawler - WARNING - Erro ao aguardar carregamento de imagens: Message: Timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ScriptTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:763:5
+evaluate.sandbox/timeoutPromise</scriptTimeoutID<@chrome://remote/content/marionette/evaluate.sys.mjs:97:11
+notify@resource://gre/modules/Timer.sys.mjs:49:17
+
+2025-04-05 21:48:07,219 - crawler - INFO - Pausando vídeos e animações
+2025-04-05 21:48:09,240 - crawler - INFO - Usando captura nativa do Firefox para página completa
+2025-04-05 21:48:09,590 - crawler - INFO - Screenshot capturado com dimensões: (1920, 11043)
+2025-04-05 21:48:11,659 - pdf_generator - INFO - PDF criado com sucesso: results\regimesocial.org\pages\page_12.pdf
+2025-04-05 21:48:11,659 - __main__ - INFO - PDF criado com sucesso: results\regimesocial.org\pages\page_12.pdf
+2025-04-05 21:48:11,781 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\regimesocial.org\regimesocial.org_completo.pdf
+2025-04-05 21:48:14,360 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\todos_os_sites.pdf

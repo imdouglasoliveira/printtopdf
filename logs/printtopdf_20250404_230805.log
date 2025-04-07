@@ -1,0 +1,15 @@
+2025-04-04 23:08:05,798 - __main__ - INFO - Iniciando PrintToPDF
+2025-04-04 23:08:05,798 - __main__ - INFO - Configurações: browser=chrome, max_depth=3, wait_time=5s
+2025-04-04 23:08:10,355 - crawler - WARNING - Erro ao acessar https://nbsocial.org/nbsocial.org: 404 Client Error: Not Found for url: https://nbsocial.org/nbsocial.org
+2025-04-04 23:08:10,528 - crawler - WARNING - Erro ao acessar https://nbsocial.org/cdn-cgi/l/email-protection: 404 Client Error: Not Found for url: https://nbsocial.org/cdn-cgi/l/email-protection
+2025-04-04 23:08:10,708 - crawler - WARNING - Erro ao acessar https://nbsocial.org/sobre-nos: 404 Client Error: Not Found for url: https://nbsocial.org/sobre-nos
+2025-04-04 23:11:53,481 - crawler - WARNING - Timeout ao carregar https://nbsocial.org/como-criar-um-jardim-de-baixa-manutencao-em-casa, tentando novamente com tempo maior
+2025-04-04 23:18:57,567 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\nbsocial.org\nbsocial.org_completo.pdf
+2025-04-04 23:19:04,211 - crawler - INFO - Conteúdo duplicado detectado: https://anbap.org/home
+2025-04-04 23:19:08,399 - crawler - WARNING - Erro ao acessar https://anbap.org/sobre-nos: 404 Client Error: Not Found for url: https://anbap.org/sobre-nos
+2025-04-04 23:19:08,587 - crawler - WARNING - Erro ao acessar https://anbap.org/cdn-cgi/l/email-protection: 404 Client Error: Not Found for url: https://anbap.org/cdn-cgi/l/email-protection
+2025-04-04 23:31:53,608 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\anbap.org\anbap.org_completo.pdf
+2025-04-04 23:32:01,813 - crawler - WARNING - Erro ao acessar https://regimesocial.org/sobre-nos: 404 Client Error: Not Found for url: https://regimesocial.org/sobre-nos
+2025-04-04 23:35:51,116 - crawler - WARNING - Timeout ao carregar https://regimesocial.org/contato, tentando novamente com tempo maior
+2025-04-04 23:40:50,845 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\regimesocial.org\regimesocial.org_completo.pdf
+2025-04-04 23:40:53,772 - pdf_generator - INFO - PDF mesclado criado com sucesso: results\todos_os_sites.pdf
