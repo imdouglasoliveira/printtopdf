@@ -2,3 +2,5 @@
 *venv
 *.venv
 *results
+*.log
+*__pycache__

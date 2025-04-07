@@ -1,8 +1,0 @@
-2025-04-06 22:57:44,203 - __main__ - INFO - Iniciando PrintToPDF para Sitemaps XML com configurações de alta qualidade
-2025-04-06 22:57:44,203 - __main__ - INFO - Configurações: browser=firefox, wait_time=45s, extra_wait_for_media=20s
-2025-04-06 22:57:44,203 - sitemap_parser - INFO - Processando sitemap: https://anbap.org/wp-sitemap-posts-page-1.xml
-2025-04-06 22:57:44,699 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap
-2025-04-06 22:57:44,700 - sitemap_parser - INFO - Processando sitemap: https://nbsocial.org/wp-sitemap-posts-page-1.xml
-2025-04-06 22:57:45,070 - sitemap_parser - INFO - Extraídas 13 URLs do sitemap
-2025-04-06 22:57:45,107 - sitemap_parser - INFO - Processando sitemap: https://regimesocial.org/wp-sitemap-posts-page-1.xml
-2025-04-06 22:57:45,420 - sitemap_parser - INFO - Extraídas 12 URLs do sitemap

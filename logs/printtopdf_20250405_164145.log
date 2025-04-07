@@ -1,3 +1,0 @@
-2025-04-05 16:41:45,919 - __main__ - INFO - Iniciando PrintToPDF com configurações de alta qualidade
-2025-04-05 16:41:45,919 - __main__ - INFO - Configurações: browser=firefox, max_depth=3, wait_time=30s, extra_wait_for_media=15s
-2025-04-05 16:41:45,922 - __main__ - ERROR - Erro ao processar site https://nbsocial.org/: WebCrawler.__init__() got an unexpected keyword argument 'extra_wait_for_media'
